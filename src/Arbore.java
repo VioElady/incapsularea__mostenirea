@@ -2,45 +2,41 @@
 
 public class Arbore {
     private String name;
-    private int frunze;
-    private int ramuri;
-    private int tulpina = 1;
+    private int leaves;
+    private int branches;
+    private int stem = 1;
 
-    Arbore(String name, int frunze, int ramuri){
+    Arbore(String name, int leaves, int branches){
         this.name=name;
-        this.frunze=frunze;
-        this.ramuri=ramuri;
-    }
-
-    Arbore(String name,int frunze) {
-        this.name = name;
-        this.frunze = frunze;
+        this.leaves=leaves;
+        this.branches=branches;
     }
 
     public String getName() {
         return this.name;
     }
 
-    public int getFrunze() {
-        return this.frunze;
+    public int getLeaves() {
+        return this.leaves;
     }
 
-    public int getRamuri() {
-        return this.ramuri;
+    public int getBranches() {
+        return this.branches;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setFrunze(int frunze) {
-        this.frunze = frunze;
+    public void setLeaves(int leaves) {
+        this.leaves = leaves;
     }
 
-    public void setRamuri(int ramuri) {
-    this.ramuri = ramuri;
+    public void setBranches(int branches) {
+    this.branches = branches;
     }
+    @Override
     public String toString() {
-        return (" Eu un arbore cu denumirea " + this.name + " , el are " + this.frunze + " frunze si "+ this.ramuri + " ramuri");
+        return (" Eu am un arbore cu denumirea " + name + " , el are " + leaves + " frunze si "+ branches + " ramuri.");
     }
 }

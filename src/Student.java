@@ -3,24 +3,23 @@
 public class Student extends Person {
     private double medie;
 
-    Student(int Age, String Fname){
-        super(Age, Fname);
-
-    }
-
-    Student(int Age,double Height,String Lname, String Fname,double medie){
-        super( Age, Height,Lname,Fname );
-
+    Student(String Fname,String Lname,int Age,double Height,double medie){
+        super(Fname,Lname,Age,Height);
         this.medie=medie;
     }
 
     public double getMedie() {
         return medie;
+   }
+
+    public void setMedie(double medie) {
+        this.medie = medie;
     }
 
-   public String getLname(){
-        return super.lname;
-   }
+    @Override
+    public String toString() {
+        return  (" Pe prietena mea o cheama " + getFname()+ " " + getLname() + " , are " + getAge() + " ani  inaltimea de " + getHeight() + " metri si "+ "media =" + medie );
+    }
 }
 
 

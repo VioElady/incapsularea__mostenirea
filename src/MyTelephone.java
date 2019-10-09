@@ -1,27 +1,32 @@
 
 
-public class MyTelephone extends MyNootebook {
-    private String modely;
+public class MyTelephone extends MyDevice {
+    private String model;
+    private String desing;
 
-    MyTelephone(String name, int memory, float weight,String color,int price,String modely){
-        super(name,memory,weight,color,price);
-        this.modely=modely;
+    MyTelephone(String Name, int Memory, double Weight,String Color,int Price,String model,String desing){
+        super(Name,Memory,Weight,Color,Price);
+        this.model=model;
+        this.desing=desing;
     }
 
     public void setName(String name) {
-        this.modely=modely;
+        this.model=model;
     }
 
     public String getName(){
-        return this.modely;
+        return this.model;
+    }
+    public void setDesing(String desing){
+        this.desing=desing;
     }
 
-    public void setColor(String color)
-    {
-        super.setColor(color);
+    public String getDesing() {
+        return desing;
     }
 
-    public String getColor(){
-        return super.getColor();
+    @Override
+    public String toString() {
+        return ("Dispozitivul  meu are denumirea de "+ getName()+ ", are culoarea "+ getColor()+ ", pretul= "+ getPrice()+" modelul= "+ model+ " si desingul "+ desing);
     }
 }

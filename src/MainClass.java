@@ -4,57 +4,32 @@ public class MainClass {
 
     public static void main(String[] arg) {
 
-        Person Violina = new Person(20, "Violina");
-        Person Eduard = new Person(23, 1.56, "Grey", "John");
-        Violina.age=21;
+        Person violina = new Person("Violina", "Eladii",20,1.66);
+        Person eduard = new Person( "Eduard", "Grey",23,1.77);
+        Student katy = new Student("Katy", "Lary",21,1.65,8.77);
 
-        System.out.println(" Eu ma numesc " + Violina.fname + " si am " + Violina.age + " de ani. ");
-        System.out.println(" Prietenul meu il cheama " + Eduard.fname + " " + Eduard.lname + " , are " + Eduard.age + " ani  si inaltimea " + Eduard.height + " metri. ");
-
-        System.out.println(Violina);
-        System.out.println(Eduard);
-
-        Arbore Cires = new Arbore("Brad", 45, 34);
-        Arbore Tei = new Arbore("Stejar", 55, 32);
-        System.out.println(" Eu am un arbore cu denumirea " + Cires.getName() + " cu " + Cires.getFrunze() + " frunze si " + Cires.getRamuri()+ " de ramuri. ");
-        System.out.println(" Eu am un arbore cu denumirea " + Tei.getName() + " cu " + Tei.getFrunze() + " frunze si " + Tei.getRamuri()+ " de ramuri. ");
+        System.out.println(violina);
+        System.out.println(eduard);
+        System.out.println(katy);
 
 
-        Cires.setName("Prune");
-        Cires.setFrunze(44);
-        Cires.setRamuri(22);
+        Arbore stejar = new Arbore("Stejar", 45, 34);
+        Arbore salcam = new Arbore("Salcam", 55, 32);
+        Pom_fructifer cires = new Pom_fructifer("Cires",34,22,24);
 
-        Tei.setName(" Artar ");
-        Tei.setFrunze(24);
-        Tei.setRamuri(46);
-
-        System.out.println(Cires);
-        System.out.println(Tei);
-
-        Student Jack = new Student( 44, "Lorena");
-        System.out.println(Jack);
-
-        Student Eugen=new Student(56, 1.70,"Brudici", "Eugen",7.88) ;
-        System.out.println(Eugen);
-        System.out.println( Eugen.getMedie() );
-        System.out.println( Eugen.getLname());
+        System.out.println(stejar);
+        System.out.println(salcam);
+        System.out.println(cires);
 
 
-        MyNootebook Hp= new MyNootebook("hp",1600,35,"blue",5000);
-        MyNootebook Samsung =new MyNootebook(9000,1700,"black","Samsung");
+        MyDevice hp= new MyDevice("hp",3000,12,"rosie",5056 );
+        MyDevice samsung =new MyDevice("samsung",5000,44,"negru",10077);
+        MyTelephone mI_A2= new MyTelephone("MI_A2",2000,40," albastru ",5088," Redmi "," mate_34 ");
 
-        Hp.setName("Lenova");
-        Samsung.setColor("red");
-        Hp.setColor("orange");
+        System.out.println(hp);
+        System.out.println(samsung);
+        System.out.println(mI_A2);
 
-        System.out.println(Hp);
-        System.out.println(Samsung);
-
-        MyTelephone MI_A2= new MyTelephone("MI_A2",2000,40," albastru ",5000,"Redmi");
-
-        System.out.println(MI_A2);
-
-        My_wardrobe Modern =new My_wardrobe(44, 21);
 
     }
 }

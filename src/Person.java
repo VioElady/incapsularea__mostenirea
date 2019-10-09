@@ -1,24 +1,53 @@
 
 
 public class Person {
-    int age ;
-    String fname;
-    String lname;
-    double height;
+    private int age ;
+    private String fname;
+    private String lname;
+    private double height;
 
-    Person(int age, String fname){
-        this.age=age;
-        this.fname=fname;
-    }
 
-    Person(int age,double height,String lname, String fname){
+    Person(String fname,String lname,int age,double height){
         this.age=age;
         this.height=height;
         this.lname=lname;
         this.fname=fname;
     }
 
+    public String getFname() {
+        return fname;
+    }
+
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+
+    public String getLname() {
+        return lname;
+    }
+
+    public void setLname(String lname) {
+        this.lname = lname;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    @Override
     public String toString() {
-        return (" Eu sunt " + this.fname + " si am " + this.age + " ani. ");
+        return (" Eu sunt " + fname +" "+ lname + " am " + age + " ani si am  " + height + " metri ");
     }
 }
